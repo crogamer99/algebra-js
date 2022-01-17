@@ -4,8 +4,6 @@ while(i<20){
     if(i%9==0){
         i++;
     }
-    else{
-        console.log(i);
-        i++;
-    }
+    console.log(i);
+    i++;
 }
