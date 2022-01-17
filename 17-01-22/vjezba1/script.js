@@ -1,5 +1,5 @@
 var text = " Lorem ipsum dolor sit amet";
-var textLength, textSit, textPlus, text1;
+var textLength, textSit, textPlus;
 
 textLength = text.length; // 1)
 
