@@ -51,3 +51,6 @@ console.log("you would have saved $" + car.fuelPriceSavings("mid",car.efficiency
 
 console.log("you can get the " + car.brand.model + " in any one of the following colors: ");
 list(car.color);
+
+carObj = JSON.stringify(car);
+console.log(carObj);
