@@ -1,12 +1,7 @@
 "use strict";
 // 1.
-var x = {
-    a : 79
-};
+var a = 97;
 var b = 34;
-delete x.a;
-function window(){var b;}
-delete window.b;
 var myObject = {property1:1, property2:2, property3:1};
 
 
