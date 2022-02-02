@@ -1,0 +1,26 @@
+<html lang="eng">
+
+<head>
+    <title>Kanye Quote API</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body>
+    <h1>Kayne Quote API</h1>
+
+    <p>Every time you refresh the page i will show you a new Kanye quote!</p>
+
+    <p id="kanyeQuote"></p>
+    <script>
+        const url = "https://api.kanye.rest";
+        fetch(url)
+        .then(response => response.json())
+        .then(data => document.getElementById("kanyeQuote").innerHTML = `${data.quote} ~Kanye 2021`)
+        .catch((error) => {
+            console.error("error:", error);
+        });
+    </script>
+
+</body>
+
+</html>
