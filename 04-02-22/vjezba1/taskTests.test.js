@@ -1,5 +1,3 @@
-//dali ce array bit -infinity,undefined,ili broj kk
-
 const findMax = require("./taskTests");
 
 const testArray = [1, -72, 10, -4, 0, 0.0001, 999, 132914];
