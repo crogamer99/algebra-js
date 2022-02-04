@@ -10,7 +10,7 @@ test("is the solution -Infinity", () =>{
     expect(findMax(testArray)).toBe(-Infinity); //is if findMax("not a number")
 });
 
-test("the solution contains only numbers and doesn't return -Infinity", () =>{
+test("the solution contains only numbers", () =>{
     expect(findMax(testArray)).not.toBe(-Infinity);
     expect(findMax(testArray)).not.toBe(undefined);
 });
