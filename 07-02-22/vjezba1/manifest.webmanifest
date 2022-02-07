@@ -1,0 +1,15 @@
+{
+    "background_color": "#26476E",
+    "description": "The first XHTML 1.1 Validated template",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "screenshot.jpg",
+            "sizes": "890x798",
+            "type": "image/jpg"
+        }
+    ],
+    "name": "Reverted by Bryant Smith",
+    "short_name": "Reverted",
+    "start_url": "index.html"
+}
