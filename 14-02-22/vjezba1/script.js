@@ -7,5 +7,5 @@ $(document).ready(function(){
     });
     $(".enter").mouseover(function(){
       $("body").css("background-color","blue");
-    })
+    });
   });
