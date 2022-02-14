@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="card" style="width: 18rem;">
+        <img class="img-top" src="..." alt="Card image cap">
+        <div class="body">
+            <h5 class="title">ChuckNoris Quote</h5>
+            <p class="quote">qoute</p>
+            <p class="date"></p>
+            <a class="btn">See original</a>
+        </div>
+    </div>
+    <button class="chuck">Chuck</button>
+    <script>
+        $(document).ready(function () {
+            $(".chuck").click(function(){
+                $(".card").show();
+                $.ajax({
+                url: "https://api.chucknorris.io/jokes/random",
+                dataType: "json",
+                success: function (data) {
+                    $(".btn").attr("href",`${data.url}`),
+                    $(".quote").html(`${data.value}`),
+                    $(".img-top").attr("src",`${data.icon_url}`),
+                    $(".date").html(`${data.updated_at}`)
+                }
+            })
+            });
+        });
+    </script>
+    <style>
+        body{
+            text-align: center;
+        }
+        .chuck{
+            margin: auto;
+        }
+        .body {
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        .card {
+            margin: auto;
+            display: none;
+        }
+        .img-top {
+            width: 50px;
+            margin: auto;
+        }
+        .date{
+            font-size: 10px;
+        }
+    </style>
+</body>
+
+</html>
